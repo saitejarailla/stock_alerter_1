@@ -1,0 +1,21 @@
+.card1{
+  display: block;
+  margin: auto;
+}
+body{
+  background: linear-gradient(80deg,rgb(178, 223, 238),rgb(12, 107, 170));
+  background-size:90em 750em;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+
+}
+.form-control.abc{
+  font-size: medium;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+}
+
