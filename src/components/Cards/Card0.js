@@ -9,7 +9,7 @@ function Card0(props) {
   
   
     const  [values1,setValues]=useState("");
-    const { handleSubmit, register, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = values => setValues(values) ;
     console.log(values1)
   
@@ -22,9 +22,18 @@ function Card0(props) {
                     </div>
                     <div className="face4 back4">
                         <h1 className="heading4">{props.obj[1]}</h1>
-                        <p className="radiobtns"><u><b><i>PURPOSE</i></b></u> : 
+                        {/* <input className='form-radio'></input> */}
+                        <div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" {...register("purpose")} value="sell" />
+  <label className="form-check-label" for="inlineRadio1">sell</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="buy" />
+  <label className="form-check-label" for="inlineRadio2">buy</label>
+</div>
+                        {/* <p className="radiobtns"><u><b><i>PURPOSE</i></b></u> : 
                         To Sell<input type="radio" name="purpose"/> 
-                        To Buy<input type="radio" name="purpose"/></p>
+                        To Buy<input type="radio" name="purpose"/></p> */}
                         <form onSubmit={handleSubmit(onSubmit )}>
                         <p><u><b><i>Set Your Price</i></b></u><br/>
                             <input className='d-block mx-auto'
@@ -43,6 +52,7 @@ function Card0(props) {
                               {errors.username && errors.username.message}
                                 <button className='btn2 d-block mx-auto' type="submit">Get Price</button>
                                 </form>
+                                
                                 <Report search={[props.obj[2],values1.price,values1.Email,props.obj[1]]}/>
                         <p id="alerttext1"> </p>
                     </div>

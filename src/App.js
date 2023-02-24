@@ -13,29 +13,7 @@ function App() {
 
   return (
     <div>
-    <div className='text-center'>
-     <form onSubmit={handleSubmit(onSubmit)}>
-      <input className='d-block mx-auto'
-        type="text"
-        {...register("name", {
-          required: "Required",
-        })} placeholder='stock'
-      />
-
-      <input className='d-block mx-auto'
-        {...register("limit", {
-          required: "Required",
-          
-        })} placeholder='limit'
-      />
-      {errors.username && errors.username.message}
-
-      <button className='d-block mx-auto' type="submit">Submit(app)</button>
-   </form> 
-
-
-       <Report search={[values1.name,values1.limit]}/> 
-    </div>
+   
 
             <Card1></Card1>
 

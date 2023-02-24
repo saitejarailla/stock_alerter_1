@@ -7,12 +7,12 @@ const Report =(props)=>{
 
     const[price1,setPrice]=useState(null);
     const[symbol,setSymbol]=useState(null)
-   console.log(props)
+   console.log(price1)
 
     useEffect(()=>{
         const fetchApi=async()=>{
-             let api_key = 'b914ebe8009ab25dd00ce856a8923288';
-            // let api_key ='98097d44f41b16a6972fec2f14334972'
+            //  let api_key = 'b914ebe8009ab25dd00ce856a8923288';
+            let api_key ='98097d44f41b16a6972fec2f14334972'
             // let api_key ='43eb754c0bd794db430baa9837e04977'
            //  let api_key ='664f0277b2201619256a9fa8475b301f'
             const url="https://financialmodelingprep.com/api/v3/quote-short/"+props.search[0]+"?apikey="+api_key;
@@ -38,7 +38,7 @@ const Report =(props)=>{
 
 
     return (
-    <div >    
+    <div >     <p>price:{price1} </p>
                     { props.search[1]>=price1 ?   <ContactUs sent={[props.search[0],price1,props.search[2]]} />:<h1></h1>}
 
         

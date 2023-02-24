@@ -1,20 +1,11 @@
 import './Card1.css';
 import { useState } from 'react';
 import {useForm } from 'react-hook-form'
-import SingleCard from './SingleCard';
-import Report from './Report';
+
 import Card0 from './Cards/Card0'
 import Card2 from './Cards/Card2'
 import Card3 from './Cards/Card3'
-import Card4 from './Cards/Card4'
-import Card5 from './Cards/Card5'
-import Card6 from './Cards/Card6'
-import Card7 from './Cards/Card7'
-import Card8 from './Cards/Card8'
-import Card9 from './Cards/Card9'
-import Card10 from './Cards/Card10'
-import Card11 from './Cards/Card11'
-import Card12 from './Cards/Card12'
+
 
 
 
