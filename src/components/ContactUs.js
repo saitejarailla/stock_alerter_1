@@ -15,7 +15,7 @@ export const ContactUs = (props1) => {
       });
   };
   
-  console.log(props1)
+  // console.log(props1)
   return (
 
 

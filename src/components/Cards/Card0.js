@@ -11,7 +11,7 @@ function Card0(props) {
     const  [values1,setValues]=useState("");
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = values => setValues(values) ;
-    console.log(values1)
+    // console.log(values1)
   
     return (
         <div>
@@ -25,11 +25,11 @@ function Card0(props) {
                         {/* <input className='form-radio'></input> */}
                         <div className="form-check form-check-inline">
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" {...register("purpose")} value="sell" />
-  <label className="form-check-label" for="inlineRadio1">sell</label>
+  <label className="form-check-label" htmlFor="inlineRadio1">sell</label>
 </div>
 <div className="form-check form-check-inline">
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="buy" />
-  <label className="form-check-label" for="inlineRadio2">buy</label>
+  <label className="form-check-label" htmlFor="inlineRadio2">buy</label>
 </div>
                         {/* <p className="radiobtns"><u><b><i>PURPOSE</i></b></u> : 
                         To Sell<input type="radio" name="purpose"/> 

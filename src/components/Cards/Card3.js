@@ -8,7 +8,7 @@ function Card3(props) {
     const  [values1,setValues]=useState("");
     const { handleSubmit, register, formState: { errors } } = useForm();
     const onSubmit = values => setValues(values) ;
-    console.log(values1)
+    // console.log(values1)
   
     return (
         <div>
@@ -19,9 +19,14 @@ function Card3(props) {
                     </div>
                     <div className="face4 back4">
                         <h1 className="heading4">{props.obj[1]}</h1>
-                        <p className="radiobtns"><u><b><i>PURPOSE</i></b></u> : 
-                        To Sell<input type="radio" name="purpose"/> 
-                        To Buy<input type="radio" name="purpose"/></p>
+                        <div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" {...register("purpose")} value="sell" />
+  <label className="form-check-label" htmlFor="inlineRadio1">sell</label>
+</div>
+<div className="form-check form-check-inline">
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="buy" />
+  <label className="form-check-label" htmlFor="inlineRadio2">buy</label>
+</div>
                         <form onSubmit={handleSubmit(onSubmit )}>
                         <p><u><b><i>Set Your Price</i></b></u><br/>
                             <input className='d-block mx-auto'

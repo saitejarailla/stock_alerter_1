@@ -13,7 +13,7 @@ function Card1(){
     const  [values1,setValues]=useState("");
     const { handleSubmit, register, formState: { errors } } = useForm( );
     const onSubmit = values => setValues(values);
-    console.log(values1)
+    // console.log(values1)
     let company=[
         {
             photo1 : "https://logos-world.net/wp-content/uploads/2022/02/ServiceNow-Symbol.png",

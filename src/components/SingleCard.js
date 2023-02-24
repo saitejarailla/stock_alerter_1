@@ -8,7 +8,7 @@ function SingleCard(props) {
     const  [values1,setValues]=useState("");
     const { handleSubmit, register, formState: { errors } } = useForm();
     const onSubmit = values => setValues(values) ;
-    console.log(values1)
+    // console.log(values1)
   
     return (
         <div>
