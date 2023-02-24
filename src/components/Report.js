@@ -23,8 +23,8 @@ const Report =(props)=>{
             setPrice(resJson[0].price)
             setSymbol(resJson[0].symbol)
            } 
-           if(price1!==null)
-           alert("price of "+props.search[4]+" is "+price1)
+        //    if(price1!==null)
+        //    alert("price of "+props.search[4]+" is "+price1)
 
        };
        fetchApi();
