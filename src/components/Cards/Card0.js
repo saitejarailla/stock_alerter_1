@@ -53,7 +53,7 @@ function Card0(props) {
                                 <button className='btn2 d-block mx-auto' type="submit">Get Price</button>
                                 </form>
                                 
-                                <Report search={[props.obj[2],values1.price,values1.Email,props.obj[1]]}/>
+                                <Report search={[props.obj[2],values1.price,values1.Email,props.obj[1]]} purpose={values1.purpose}/>
                         <p id="alerttext1"> </p>
                     </div>
                 </div>

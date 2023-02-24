@@ -45,7 +45,7 @@ function Card3(props) {
                               {errors.username && errors.username.message}
                                 <button className='btn2 d-block mx-auto' type="submit">Submit</button>
                                 </form>
-                                <Report search={[props.obj[2],values1.price,values1.Email,props.obj[1]]}/>
+                                <Report search={[props.obj[2],values1.price,values1.Email,props.obj[1]]} purpose={values1.purpose}/>
 
                         
                         <p id="alerttext1"> </p>

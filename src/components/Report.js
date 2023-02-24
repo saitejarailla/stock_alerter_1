@@ -39,6 +39,24 @@ const Report =(props)=>{
 
     return (
     <div >     <p>price:{price1} </p>
+
+                {/* {
+                    props.purpose&&  
+                    props.purpose==="buy"? 
+                    props.search[1]<=price1 &&  <ContactUs sent={[props.search[0],price1,props.search[2]]}/> :
+                    props.search[1]>=price1 &&   <ContactUs sent={[props.search[0],price1,props.search[2]]}/>
+                } */}
+
+
+
+{
+                    props.purpose&&  
+                    props.purpose==="buy"? 
+                    props.search[1]<=price1 &&  <p>buy</p> :
+                    props.search[1]>=price1 &&   <p>sell</p>
+                }
+
+
                     { props.search[1]>=price1 ?   <ContactUs sent={[props.search[0],price1,props.search[2]]} />:<h1></h1>}
 
         
