@@ -1,17 +1,15 @@
-import React from 'react';
+import React from 'react'
 
 function Alert1() {
-    for(let i=0;i<100;i++){
+  return (
+    <div>
+      <h1>
+        <h2>
         
-        setTimeout(() => {  console.log("World!"); }, 100000);
-
-    }
-
-    return (
-        <div>
-            
-        </div>
-    );
+        </h2>
+      </h1>
+    </div>
+  )
 }
 
-export default Alert1;
+export default Alert1

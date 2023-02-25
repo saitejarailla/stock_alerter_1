@@ -1,6 +1,5 @@
 import './Card1.css';
-import { useState } from 'react';
-import {useForm } from 'react-hook-form'
+
 
 import Card0 from './Cards/Card0'
 import Card2 from './Cards/Card2'
@@ -10,9 +9,7 @@ import Card3 from './Cards/Card3'
 
 
 function Card1(){
-    const  [values1,setValues]=useState("");
-    const { handleSubmit, register, formState: { errors } } = useForm( );
-    const onSubmit = values => setValues(values);
+   
     // console.log(values1)
     let company=[
         {

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import {useForm } from 'react-hook-form'
-import { ContactUs } from '../ContactUs';
 import  Report  from '../Report'
 import './Card1.css'
 function Card0(props) {

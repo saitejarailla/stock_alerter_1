@@ -13,8 +13,8 @@ const Report =(props)=>{
         const fetchApi=async()=>{
             //  let api_key = 'b914ebe8009ab25dd00ce856a8923288';
             // let api_key ='98097d44f41b16a6972fec2f14334972'
-            let api_key ='43eb754c0bd794db430baa9837e04977'
-           //  let api_key ='664f0277b2201619256a9fa8475b301f'
+            // let api_key ='43eb754c0bd794db430baa9837e04977'
+            let api_key ='664f0277b2201619256a9fa8475b301f'
             const url="https://financialmodelingprep.com/api/v3/quote-short/"+props.search[0]+"?apikey="+api_key;
             const response=await fetch(url);
             const resJson=await response.json();
@@ -29,7 +29,7 @@ const Report =(props)=>{
        };
        fetchApi();
     //    if(props.search[1]<price1){
-    //    setInterval(fetchApi,10000);}
+    //    setInterval(fetchApi,1000);
     },[props])
 
 
