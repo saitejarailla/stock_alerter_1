@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {useForm } from 'react-hook-form'
 import  Report  from '../Report'
-import './Card1.css'
+import '../Card1.css'
 function Card0(props) {
     
   
