@@ -4,7 +4,7 @@ import './Card1.css';
 import Card0 from './Cards/Card0'
 import Card2 from './Cards/Card2'
 import Card3 from './Cards/Card3'
-
+import Navbar from './Navbar'
 
 
 
@@ -58,7 +58,7 @@ function Card1(){
         }
     ]
     return(
-        
+        <>
         <div className="cardType4">
             {company.map(obj=>(<div className="container4">
                 <Card0 obj={[obj.photo1,obj.title1,obj.sym1]}></Card0>
@@ -67,7 +67,7 @@ function Card1(){
 
             </div>))}
         </div>
-        
+        </>
         
     )
 }
