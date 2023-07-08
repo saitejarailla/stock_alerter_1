@@ -27,7 +27,7 @@ function Card0(props) {
   <label className="form-check-label" htmlFor="inlineRadio1">sell</label>
 </div>
 <div className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="buy" />
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" {...register("purpose")} value="buy" />
   <label className="form-check-label" htmlFor="inlineRadio2">buy</label>
 </div>
                         {/* <p className="radiobtns"><u><b><i>PURPOSE</i></b></u> : 

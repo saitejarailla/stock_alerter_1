@@ -25,10 +25,25 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      .abc{
+        top: -1;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <div class="abc">
+      <div id="google_element"></div>
+ </div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" ></script>
+    <script>
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element")
+      }
+      </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

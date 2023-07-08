@@ -7,6 +7,8 @@ import Card1 from './components/Card1';
 import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom';
 import Prediction from './components/Prediction';
+import Footer from './components/Footer';
+import Test from './components/Cards/Test';
 
 function App() {
   const  [values1,setValues]=useState("");
@@ -21,6 +23,8 @@ function App() {
         <Route  path='/'  element={<Card1 />}></Route>
         <Route  path='/prediction' element={<Prediction />} ></Route>
       </Routes>
+      <Footer />
+      <Test />
     </div>
   );
   }
