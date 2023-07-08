@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Report from "../Report";
 import "../Card.css";
-function Card2(props) {
+function Card0(props) {
     const [values1, setValues] = useState("");
     const {
         register,
@@ -86,4 +86,4 @@ function Card2(props) {
     );
 }
 
-export default Card2;
+export default Card0;

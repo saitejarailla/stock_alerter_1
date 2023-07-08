@@ -1,16 +1,11 @@
-import './Card1.css';
-
-
-import Card0 from './Cards/Card0'
+import Card0 from './Cards/Card1'
 import Card2 from './Cards/Card2'
 import Card3 from './Cards/Card3'
-import Navbar from './Navbar'
-
+import './Card.css';
 
 
 function Card1(){
-   
-    // console.log(values1)
+
     let company=[
         {
             photo1 : "https://logos-world.net/wp-content/uploads/2022/02/ServiceNow-Symbol.png",
@@ -64,7 +59,6 @@ function Card1(){
                 <Card0 obj={[obj.photo1,obj.title1,obj.sym1]}></Card0>
                 <Card2 obj={[obj.photo2,obj.title2,obj.sym2]}></Card2>
                 <Card3 obj={[obj.photo3,obj.title3,obj.sym3]}></Card3>
-
             </div>))}
         </div>
         </>
