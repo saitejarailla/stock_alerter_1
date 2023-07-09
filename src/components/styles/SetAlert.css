@@ -1,18 +1,33 @@
-.cardType4{
+.setAlertBackground {
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 85vw;
+  }
+  
+  .setAlertTop {
+    height: 12vh;
+    width: 85vw;
+    background-color: transparent;
+  }
+  
+  .cardType4 {
     display: grid;
-    height: 100vh;
     margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
   }
-  .container4{
+  
+  .container4 {
     display: flex;
-    margin: 30px;
   }
-  .card4{
+  
+  .card4 {
     position: relative;
-    width: 300px;
+    width: 100%;
     height: 350px;
-    margin: 60px;
   }
+  
   .card4 .face4{
     position: absolute;
     width: 100%;

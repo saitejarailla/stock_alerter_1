@@ -1,0 +1,12 @@
+.knowMoreBackground{
+    margin-left: 6%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 85vw;
+}
+
+.knowMoreTop{
+    height: 12vh;
+    width: 85vw;
+    background-color: transparent;
+}

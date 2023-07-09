@@ -1,0 +1,80 @@
+
+.home{
+  z-index: -1;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.down{
+  position: absolute;
+  opacity: 0;
+  border-radius: 5%;
+  top: 90vw;
+  height: 50vw;
+  width: 78vw;
+  padding: 5%;
+  margin: 10%;
+  background:rgb(170, 220, 235);
+}
+
+.pic{
+  position: absolute;
+  float: right;
+  top: 23%;
+  left: 50%;
+  width: 70vh;
+}
+
+@media all and (max-width :995px) {
+  .home{
+    opacity: 0;
+  }
+  .pic{
+    float: none;
+    position: absolute;
+    top: 18%;
+    width: 60%;
+    height: 45%;
+    left: 20%;
+  }
+  .down{
+    opacity: 1;
+  }
+  .smallNav{
+    z-index: 5;
+    opacity: 1;
+  }
+  .smallnav
+  {
+    z-index: 5;
+    opacity: 1;
+  }
+  .profileNavbar{
+    z-index: -1;
+    opacity: 0;
+    width: 10%;
+  }
+}
+
+@media all and (min-width: 1150px)
+{
+  .pic{
+    top: 20%;
+    width: 90vh;
+  }
+  
+}
+
+.content{
+  width: 45%;
+}
+
+.mobileContent{
+  width: 100%;
+  /* background:rgb(170, 220, 235); */
+}
+
+h2{
+  color: rgb(65, 65, 114);
+}

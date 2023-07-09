@@ -3,15 +3,9 @@ import emailjs from "emailjs-com";
 import "./ContactUs.css";
 
 export const ContactUs = (props1) => {
-
   const form = useRef();
-  useEffect(() => {
-    form.current.dispatchEvent(new Event('submit', { cancelable: true }));
-  }, []);
   const [pr, setPr] = useState("");
-  // document.getElementById("myForm").submit();
   const sendEmail = (e) => {
-    console.log("submitted");
     e.preventDefault();
     emailjs
       .sendForm(
@@ -29,8 +23,9 @@ export const ContactUs = (props1) => {
         }
       );
   };
+
   return (
-    <form ref={form} action="" onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail}>
       <div className="dis-form">
         <input
           type="email"

@@ -1,11 +1,16 @@
-import React from 'react'
+import './styles/Prediction.css';
+
 
 function Prediction() {
-  return (
-    <div className=''>
-      <h1 className='d-block mx-auto'> Comming soon</h1>
-    </div>
-  )
+
+    return (  
+        <div>
+            <div className="predictionBackground">
+                <div style={{height:'10vh',backgroundColor:'transparent'}}></div>
+                <h1>Prediction</h1>
+            </div>
+        </div>
+    );
 }
 
-export default Prediction
+export default Prediction;
