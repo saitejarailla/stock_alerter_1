@@ -5,6 +5,7 @@ import "./styles/Home.css"
 function Home() {
     return (
         <div className='homeContainer'>
+            
             <div className='picDetails'>
                 <div className='home'>
                     <div className='content'>

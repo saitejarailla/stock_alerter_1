@@ -14,7 +14,7 @@ const Report =(props)=>{
         '98097d44f41b16a6972fec2f14334972',
         '43eb754c0bd794db430baa9837e04977',
         '664f0277b2201619256a9fa8475b301f']
-        let api_key = api[3];
+        let api_key = api[0];
     useEffect(()=>{
         const fetchApi=async()=>{
 
@@ -36,17 +36,12 @@ const Report =(props)=>{
     console.log(props.purpose)
 
     return (
-    <div >     <p>price:{price1} </p>
-                {
-                    props.purpose&&  
-                    props.purpose==="buy"&&
-                    props.search[1]>=price1 && <ContactUs sent={[props.search[0],price1,props.search[2]]} />  
-                }
-                {
-                    props.purpose&&  
-                    props.purpose==="sell"&&
-                    props.search[1]<=price1 && <ContactUs sent={[props.search[0],price1,props.search[2]]} />  
-                }
+    <div >    
+        <p>price:{price1} </p>
+        {(props.purpose === "buy" && props.search[1] >= price1) ||
+        (props.purpose === "sell" && props.search[1] <= price1) && (
+            <ContactUs sent={[props.search[0], price1, props.search[2]]} />
+        )}
     </div>
 );
 }
