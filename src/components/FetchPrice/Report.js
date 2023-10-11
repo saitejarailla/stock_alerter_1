@@ -14,7 +14,7 @@ const Report =(props)=>{
         '98097d44f41b16a6972fec2f14334972',
         '43eb754c0bd794db430baa9837e04977',
         '664f0277b2201619256a9fa8475b301f']
-        let api_key = api[0];
+        let api_key = api[1];
     useEffect(()=>{
         const fetchApi=async()=>{
 
