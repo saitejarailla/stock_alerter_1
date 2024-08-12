@@ -2,12 +2,12 @@ import './App.css';
 import { Link, Route, Routes} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
-import Home from './Components/Home';
-import SetAlert from './Components/SetAlert';
-import Prediction from './Components/Prediction';
-import KnowMore from './Components/KnowMore';
-import navBtn from './Components/images/navbtn.png';
-import navicon from './Components/images/navicon.png';
+import Home from './components/Home';
+import SetAlert from './components/SetAlert';
+import Prediction from './components/Prediction';
+import KnowMore from './components/KnowMore';
+import navBtn from './components/images/navbtn.png';
+import navicon from './components/images/navicon.png';
 
 function App() {
 
@@ -16,7 +16,8 @@ function App() {
   return (
     <div>
       <div className='smallNav'>
-        <img src={navicon} height='70%' className='navIcon'/>
+        {/* <img src={navicon} height='70%' className='navIcon'/> */}
+        
         <div className='forIcon'></div>
         <button className='navBtn' onClick={()=> {status==="true" ? SetStatus("false") : SetStatus("true")}} ><img src={navBtn} width="50vh" /></button>
       </div>
